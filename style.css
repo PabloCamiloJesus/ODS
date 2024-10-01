@@ -11,7 +11,7 @@
 body{
     height: 100%;
     width: 100%;
-    background-color: #023535;
+    
 }
 
 /* HEADER */
@@ -68,6 +68,41 @@ header{
     margin-right: 100px;
 }
 
+/* MAIN */
+main{
+    width: 100vw;
+}
+.container-fluid{
+    padding: 0;
+}
+
+.slide{
+    height: 700px;
+}
+
+.carousel-item img{
+    filter: brightness(0.5);
+    height: 750px;
+    width: 100%;
+}
+
+.quadro {
+    width: 200px;
+    height: 150px;
+    background-color: #eee0fc;
+    border: 5px solid #03bb85;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    font-family: Arial, sans-serif;
+    color: #03bb85;
+    font-size: 24px;
+    margin: 0;
+}
+
 /* FOOTER */
 
 footer{
@@ -77,16 +112,19 @@ footer{
     padding: 20px;
     min-height: 300px;
     font-family: 'Poppins', sans-serif;
+    background-color: #023535;
 }
 
-.box{
-    width: 33.3%;
+.box h4{
+    color: #fff;
 }
 .box{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    width: 33.3%;
+    
 }
 
 .logo-sesi{
