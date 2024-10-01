@@ -26,7 +26,6 @@ header{
 
     /* Style */
     background-color: #038554;
-    color: #fff;
 }
 /* NAVBAR */
 .navbar{
@@ -50,6 +49,11 @@ header{
     position: relative;
 }
 
+.navbar-item a {
+    text-decoration: none;
+    color: #fff;
+}
+
 /* Hover Navbar */
 .navbar-item:hover{
     border: 1px solid #023535;
@@ -58,7 +62,7 @@ header{
     left: -4px;
     box-shadow: 4px 3px 0px 1px #68ddbd;
     background-color: #a4fff7;
-    color: #023535;
+    
 }
 
 /* OPTIONS */
@@ -86,21 +90,33 @@ main{
     width: 100%;
 }
 
+.cont_quadros {
+    margin-top: 80px;
+}
+
 .quadro {
     width: 200px;
     height: 150px;
     background-color: #eee0fc;
-    border: 5px solid #03bb85;
+    border: 3px solid #03bb85;
     padding: 10px;
     text-align: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease;
+    border-radius: 5px;
 }
 
-h1 {
+.quadro:hover {
+    transform: scale(0.3px);
+    box-shadow: 0px 0px 8px 2px rgb(0, 0, 0); /* x y  */
+    transform: scale(1.1);
+}
+
+.quadro_a {
     font-family: Arial, sans-serif;
-    color: #03bb85;
     font-size: 24px;
     margin: 0;
+    color: black;
+    text-decoration: none;
 }
 
 /* FOOTER */
