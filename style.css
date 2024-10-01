@@ -11,6 +11,7 @@
 body{
     height: 100%;
     width: 100%;
+    background-color: #023535;
 }
 
 /* HEADER */
@@ -24,7 +25,7 @@ header{
     justify-content: space-between;
 
     /* Style */
-    background-color: #023535;
+    background-color: #038554;
     color: #fff;
 }
 /* NAVBAR */
@@ -52,10 +53,11 @@ header{
 /* Hover Navbar */
 .navbar-item:hover{
     border: 1px solid #023535;
+    border-radius: 2px;
     top: -4px;
     left: -4px;
-    box-shadow: 4px 3px 0px 1px rgba(255, 255, 255, 1);
-    background-color: #16F24D;
+    box-shadow: 4px 3px 0px 1px #68ddbd;
+    background-color: #a4fff7;
     color: #023535;
 }
 
@@ -79,7 +81,6 @@ footer{
     flex-direction: column;
     align-items: center;
 }
-/* é pra fazer oq ?*/
 
 .wrapper{
     display:inline-flex;
