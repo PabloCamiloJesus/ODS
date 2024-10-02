@@ -11,6 +11,7 @@
 body{
     height: 100%;
     width: 100%;
+    font-family: 'Raleway';
     
 }
 
@@ -25,7 +26,7 @@ header{
     justify-content: space-between;
 
     /* Style */
-    background-color: #038554;
+    background-color: #023535;
 }
 /* NAVBAR */
 .navbar{
@@ -104,30 +105,161 @@ main{
     margin-top: 200px;
 }
 
+.spacer{
+    height: 50px;
+}
+
+.cont_quadros {
+    display: grid;
+    grid-template-columns: repeat(9, 1fr); /* Número total de colunas */
+    grid-template-rows: repeat(2, 1fr); /* Duas linhas */
+    gap: 18px;
+    scroll-behavior: smooth;
+    width: max-content; /* Ajusta a largura ao conteúdo total */
+    overflow: hidden;
+    align-items: center;
+    max-width: 90%;
+    row-gap: 0;
+    height: 355px;
+}
+
 .quadro {
     width: 200px;
     height: 150px;
-    background-color: #eee0fc;
-    border: 3px solid #03bb85;
+    background-color: #f6edff;
+    border: 1px solid #03bb85;
     padding: 10px;
     text-align: center;
     transition: transform 0.2s ease;
-    border-radius: 5px;
+    border-radius: 15px;
+    min-width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .quadro:hover {
     transform: scale(0.3px);
-    box-shadow: 0px 0px 8px 2px rgb(0, 0, 0); /* x y  */
+    box-shadow: 4px 4px 3px 3px rgb(0, 175, 23, 0.5); /* x y  */
     transform: scale(1.1);
 }
 
 .quadro_a {
-    font-family: Arial, sans-serif;
+    font-family: 'Raleway', sans-serif;
     font-size: 24px;
     margin: 0;
     color: black;
     text-decoration: none;
 }
+
+.btn-transparent{
+    background-color: transparent;
+    border: none;
+    position: relative;
+    z-index: 3;
+    font-size: 36px;
+    width: 30px;
+    font-weight: 700;
+    transition: .3s ease;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.btn-transparent:hover{
+    background-color: #03bb85;
+    color: #fff;
+}
+
+#scrollLeftButton{
+    left: 15px;
+    top: -210px;
+}
+
+#scrollRightButton{
+    left: 1175px;
+    top:-260px
+}
+
+/* Social Media */
+.social-media{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.banner-social-media img{
+    height: 400px;
+    width: 400px;
+}
+
+.text-social-media{
+    height: 350px;
+    width: 400px;
+    
+}
+
+.social-media-list{
+    margin-top: 50px;
+    gap: 30px;
+    margin-left: 50px;
+}
+
+.insta-logo{
+    height: 80px;
+    width: 80px;
+
+}
+
+.social-media-list li{
+    list-style: none;
+    
+}
+/* Estilo básico para o link */
+.social-link {
+    text-decoration: none; /* Remove sublinhado */
+    position: relative; /* Para posicionar o pseudo-elemento */
+    display: inline-block;
+    color: gray; /* Cor inicial do texto em cinza */
+    transition: color 0.3s ease;
+}
+
+.insta-logo {
+    height: 60px;
+    width: 60px;
+    filter: grayscale(100%); /* Imagem começa em escala de cinza */
+    transition: filter 0.3s ease; /* Transição suave para a cor */
+}
+
+.social-media-links {
+    font-size: 18px; /* Tamanho do texto */
+    font-weight: bold; /* Texto em negrito */
+    font-size: 24px;
+    color: #6f00ff;
+    filter: grayscale(1);
+    transition: filter 0.3s ease; /* Transição suave */
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.social-media-links{
+    transition: .3s ease;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+/* Efeito ao passar o mouse */
+.social-media-links:hover .insta-logo {
+    filter: grayscale(0%); /* Remover o grayscale ao passar o mouse */
+}
+
+/* Efeito ao passar o mouse */
+.social-media-links:hover {
+    filter: grayscale(0); /* Remover o grayscale ao passar o mouse */
+}
+
 
 /* FOOTER */
 
@@ -164,69 +296,33 @@ footer{
 
 .vertical-line{
     height: 200px;
+    opacity: 0.7;
     width: 2px;
     color: #000;
-    background-color: #000;
+    background-color: #ececec;
 }
 .wrapper{
     display:inline-flex;
     margin-top: 20px;
 }
 
-.wrapper .icon{
-    margin: 0 20px;
+.nav-footer{
+    gap: 10px;
     display: flex;
-    align-items: center;
-    justify-content: center;
     flex-direction: column;
-    position: relative;
-    z-index: 2;
-    cursor: pointer;
-}
-.wrapper .icon span{
-    position: relative;
-    height: 60px;
-    width: 60px;
-    display: block;
-    background: #fff;
-    text-align: center;
-    border-radius: 50%;
-    z-index: 2;
-    box-shadow: 0 10px 10px rgba(0,0,0,0.1);
+    align-items: center;
+    padding: 0;
+    margin-bottom: 20px;
 }
 
-.wrapper .icon span i{
-    font-size: 25px;
-    line-height: 60px;
-
+.nav-footer-items a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    font-family: 'Raleway', sans-serif;
+    transition: .3s ease;
 }
 
-.wrapper .icon .tooltip{
-    position: absolute;
-    top: 0px;
-    background: #fff;
-    font-size: 20px;
-    padding: 10px 18px;
-    border-radius: 25px;
-    box-shadow: 0 10px 10px rgba(0,0,0,0.1);
-    opacity: 0;
-    pointer-events: none;
-    transition: all 0.5s cubic-bezier(0.68,-0.55, 0.265,1.55 );
-}
-
-.wrapper .icon:hover .tooltip{
-    top: -70px;
-    opacity: 1;
-    pointer-events: auto;
-}
-
-.wrapper .icon .tooltip::before{
-    position: absolute;
-    content: "";
-    height: 15px;
-    width: 15px;
-    background: #fff;
-    bottom: -8px;
-    left: 50%;
-    transform: translateX(-50%) rotate(45deg);
+.nav-footer-items a:hover{
+    color: #03bb85;
 }
