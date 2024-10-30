@@ -82,12 +82,30 @@ main{
     padding: 0;
 }
 
+.carousel-control-prev{
+    margin-left: -40px;
+}
+.carousel-control-next{
+    margin-right: -40px;
+}
+
 .slide{
     height: 600px;
 }
 
+.slide-title{
+    color: #FFF;
+    position: absolute;
+    z-index: 3;
+}
+
+.carousel-inner{
+    position: relative;
+}
+
+
 .carousel-item img{
-    filter: brightness(0.5);
+    filter: brightness(0.3);
     height: 650px;
     width: 100%;
 }
@@ -174,11 +192,15 @@ main{
 #scrollLeftButton{
     left: 15px;
     top: -210px;
+    display: grid;
+    place-items: center;
 }
 
 #scrollRightButton{
     left: 1175px;
-    top:-260px
+    top:-270px;
+    display: grid;
+    place-items: center;
 }
 
 /* Social Media */
@@ -186,6 +208,7 @@ main{
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+    margin-bottom: 100px;
 }
 
 .banner-social-media img{
@@ -202,7 +225,7 @@ main{
 .social-media-list{
     margin-top: 50px;
     gap: 30px;
-    margin-left: 50px;
+    margin-left: 10px;
 }
 
 .insta-logo{
@@ -296,7 +319,7 @@ footer{
 
 .vertical-line{
     height: 200px;
-    opacity: 0.7;
+    opacity: 0.7s;
     width: 2px;
     color: #000;
     background-color: #ececec;
@@ -325,4 +348,72 @@ footer{
 
 .nav-footer-items a:hover{
     color: #03bb85;
+}
+
+@media (min-width:320px) and (max-width:768px){
+
+    .navbar{
+        display: flex;
+        margin-left: 30px;
+    }
+
+    .carousel-control-prev{
+        margin-left: 5px;
+    }
+    .carousel-control-next{
+        margin-right: 5px;
+    }
+
+    
+
+    #scrollLeftButton{
+        left: 5px;
+        top: -210px;
+        
+    }
+    
+    #scrollRightButton{
+        left: 460px;
+        top:-270px;
+        
+    }
+
+
+    .social-media{
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        margin-top: 150px;
+        
+    }
+
+    .banner-social-media{
+        opacity: 0.05;
+        position: absolute;
+    }
+
+    .text-social-media{
+        display: grid;
+        place-items: center;
+        position: absolute;
+    }
+
+    .social-media-list{
+        margin-left: -40px;
+    }
+
+    footer{
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+        margin-top: 400px;
+    }
+    .vertical-line{
+        rotate: 90deg;
+    }
+    .box h4{
+        text-align: center;
+    }
+
+
 }
