@@ -14,71 +14,109 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
     <!-- CUSTOM CSS -->
-    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="../style.css">
 
-    <!-- CUSTOM SCRIPT   -->
-    <script src="/scripts.js"></script>
-    <title>Educação de qualidade</title>
+    <title>Educação de Qualidade</title>
 </head>
 <body>
 
     <!-- HEADER COM NAVBAR -->
     <header class="container-fluid d-flex">
-
         <!-- MENU DE NAVEGAÇÃO DA PÁGINA -->
         <nav class="navbar d-flex align-items-center">
-            <li class="navbar-item"><a href="/index.html">Home</a></li>
+            <li class="navbar-item"><a href="../index.html">Home</a></li>
             <li class="navbar-item"><a href="">Pesquisas</a></li>
             <li class="navbar-item"><a href="">Resultados</a></li>
             <li class="navbar-item"><a href="">Redes Sociais</a></li>
         </nav>
     </header>
 
+    <!-- BANNER -->
     <main class="container-fluid">
         <div class="Banner">
-            <img src="/img/ods-logo.png" alt="">
+            <img src="/img/ods-logo.png" alt="ODS 4 - Educação de Qualidade" class="img-fluid">
         </div>
-        <div class="Conteudo">
-            <h1 class="Title">Erradicação da pobreza</h1>
-            <p class="Text">wsdhifgoifwgwg</p>
+        
+        <!-- CONTEÚDO PRINCIPAL -->
+        <div class="Conteudo p-4">
+            <h1 class="Title text-center mb-4">ODS 4: Educação de Qualidade</h1>
+            
+            <!-- DESCRIÇÃO CURTA -->
+            <p class="Text">O ODS 4 visa assegurar uma educação inclusiva, equitativa e de qualidade, promovendo oportunidades de aprendizado ao longo da vida para todos.</p>
+            
+            <!-- METAS E OBJETIVOS COM COLLAPSE -->
+            <div class="accordion" id="accordionExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            Metas e Objetivos
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <ul>
+                                <li>Aumentar o número de jovens e adultos com habilidades relevantes para o mercado de trabalho.</li>
+                                <li>Garantir que todas as meninas e meninos completem a educação básica e secundária de qualidade.</li>
+                                <li>Oferecer acesso a uma educação superior acessível e inclusiva.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- AÇÕES NECESSÁRIAS -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            Ações Necessárias
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <ul>
+                                <li>Garantir a formação de professores e recursos para a educação inclusiva.</li>
+                                <li>Reduzir desigualdades no acesso à educação de qualidade, especialmente em áreas rurais e periferias.</li>
+                                <li>Promover o uso de tecnologias e novas metodologias no ensino.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- IMPACTO E BENEFÍCIOS -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            Impacto e Benefícios
+                        </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <p>Uma educação de qualidade contribui para o desenvolvimento econômico, redução da desigualdade e empoderamento dos indivíduos, criando uma sociedade mais justa e preparada para os desafios futuros.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>    
     </main>
 
-    <!-- TAGS SEMANTICAS FOOTER -->
-    <footer>
-        <div class="box">
-            <img src="/img/ods-logo.png" alt="" class="ods-logo">
-            <h4 class="text-center">Objetivo de Desenvolvimento Sustentáveis</h4>
+    <!-- RODAPÉ -->
+    <footer class="d-flex justify-content-around align-items-center p-4">
+        <div class="text-center">
+            <img src="../img/ods-logo.png" alt="ODS Logo" class="ods-logo">
+            <h4>Objetivo de Desenvolvimento Sustentáveis</h4>
         </div>
-        <div class="vertical-line">.</div>
 
-        <div class="box">
+        <div class="text-center">
             <h4>Redes Sociais</h4>
-            <div class="wrapper">
-                <div class="icon facebook">
-                    <div class="tooltip">Facebook</div>
-                    <span><i class="bi bi-facebook"></i></span>
-                </div>
-                <div class="icon facebook">
-                    <div class="tooltip">Twitter</div>
-                    <span><i class="bi bi-twitter"></i></i></span>
-                </div>
-                <div class="icon facebook">
-                    <div class="tooltip">Whatsapp</div>
-                    <span><i class="bi bi-whatsapp"></i></i></span>
-                </div>
-                <div class="icon facebook">
-                    <div class="tooltip">Github</div>
-                    <span><i class="bi bi-github"></i></i></span>
-                </div>
-                
+            <div class="d-flex justify-content-around">
+                <a href="#" class="text-decoration-none text-dark"><i class="bi bi-facebook"></i></a>
+                <a href="#" class="text-decoration-none text-dark"><i class="bi bi-twitter"></i></a>
+                <a href="#" class="text-decoration-none text-dark"><i class="bi bi-whatsapp"></i></a>
+                <a href="#" class="text-decoration-none text-dark"><i class="bi bi-github"></i></a>
             </div>
         </div>
         
-        <div class="vertical-line">.</div>
-        <div class="box">
-            <!-- Logo Sesi -->
-            <img src="/img/logo-sesi.png" alt="" class="logo-sesi">
+        <div class="text-center">
+            <img src="../img/logo-sesi.png" alt="Logo Sesi" class="logo-sesi">
             <h4>By 3ºEm, vulgo Terceirão</h4>
         </div>
     </footer>
